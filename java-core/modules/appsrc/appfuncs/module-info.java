@@ -1,3 +1,3 @@
 module appfuncs {
-    exports appfuncs.simplefuncs;
+    exports appfuncs.simplefuncs to appstart;
 }

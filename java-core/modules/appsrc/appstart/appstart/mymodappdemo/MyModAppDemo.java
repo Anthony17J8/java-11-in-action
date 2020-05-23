@@ -6,6 +6,9 @@ import appfuncs.simplefuncs.SimpleMathFuncs;
  * 1. javac -d appmodules/appfuncs appsrc/appfuncs/module-info.java appsrc/appfuncs/appfuncs/simplefuncs/SimpleMathFuncs.java
  * 2. javac --module-path appmodules -d appmodules/appstart appsrc/appstart/module-info.java appsrc/appstart/appstart/mymodappdemo/MyModAppDemo.java
  * 3. java --module-path appmodules -m appstart/appstart.mymodappdemo.MyModAppDemo
+ *
+ * Multi-module mode
+ * javac -d appmodules --module-source-path appsrc appsrc/appstart/appstart/mymodappdemo/MyModAppDemo.java
  */
 public class MyModAppDemo {
 
