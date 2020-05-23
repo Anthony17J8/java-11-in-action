@@ -1,6 +1,7 @@
 package appstart.mymodappdemo;
 
 import appfuncs.simplefuncs.SimpleMathFuncs;
+import appsupport.supportfuncs.SupportFuncs;
 
 /**
  * 1. javac -d appmodules/appfuncs appsrc/appfuncs/module-info.java appsrc/appfuncs/appfuncs/simplefuncs/SimpleMathFuncs.java
@@ -14,7 +15,7 @@ public class MyModAppDemo {
 
     public static void main(String[] args) {
 
-        if (SimpleMathFuncs.isFactor(2, 10)) {
+        if (SupportFuncs.isFactor(2, 10)) {
             System.out.println("2 is a factor of 10");
         }
 
