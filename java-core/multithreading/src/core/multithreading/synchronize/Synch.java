@@ -23,7 +23,7 @@ public class Synch {
 }
 
 class Callme {
-   synchronized void call(String msg) {
+    void call(String msg) {
         System.out.print("[" + msg);
         try {
             Thread.sleep(1000);
@@ -48,6 +48,8 @@ class Caller implements Runnable {
 
     @Override
     public void run() {
-        target.call(msg);
+        synchronized (target) {
+            target.call(msg);
+        }
     }
 }
