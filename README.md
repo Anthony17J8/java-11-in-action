@@ -5,6 +5,7 @@ The project contains some notes and code examples from books [Java: The Complete
  
 ### Contents
 - [Generics](#generics)
+- [Lambda Expressions](#lambda-expressions)
 
 ## Generics  
 - Ambiguity errors that involve overloading methods:
@@ -63,3 +64,9 @@ but this OK:
 ```java
 MyClass<?> gens[] = new MyClass<?>[10];
 ```
+
+## Lambda Expressions
+- Lambda expression has access to instance and static members defined by enclosing class
+- Lambda expression has access to local variable and can use it, as for as this variable is _effectively final_. So 
+neither inside lambda expression or outside this variable must not be modified, otherwise
+code won't compile    
