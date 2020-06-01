@@ -1,5 +1,8 @@
 package core.lambda.methstaticref;
 
+/**
+ * ClassName::methodName
+ */
 public class StaticMethodRef {
 
     static String stringOp(StringFunc sf, String s) {

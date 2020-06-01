@@ -1,5 +1,8 @@
 package core.lambda.instmethref;
 
+/**
+ * objRef::methodName
+ */
 public class InstanceMethodRef {
 
     static String stringOp(StringFunc sf, String s) {
